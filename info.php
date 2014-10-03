@@ -2,7 +2,7 @@
 
 $test = [
 
- 'info' = [
+ 'info' => [
 	'first' => 'Anthony' ,
 	'last' => 'Dill',
 	'address' => '1207 Coral Street',
@@ -10,7 +10,7 @@ $test = [
 
 ],
 
- 'info1' = [
+ 'info1' => [
 	'first' => 'Ashley',
 	'last' => 'Little',
 	'address' => '1207 Coral Street',
@@ -18,7 +18,7 @@ $test = [
  
 ],
 
- 'info2' = [
+ 'info2' => [
 	'first' => 'Gabe',
 	'last' => 'Dill',
 	'address' => '1207 Coral Street',
