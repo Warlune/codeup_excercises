@@ -6,7 +6,6 @@ define('YES_NO' , $bool);
 define('MONEY', 150);
 
 
-
 $anthony = [
 	    'age' => mt_rand(1, SIDES_OF_DICE),
 	    'human' => YES_NO,
@@ -23,8 +22,15 @@ if ($anthony['human']) {
 	 ($answer = "no");
 }
 sleep(1);
+$count ='1';
+do {
+	echo "$count\n";
+	$count++;
+	sleep(1);
+	
+} while($count <= 5);
 
-sleep(5);
+sleep(1);
 
 if (($answer === "yes") && ($anthony['age'] >= 18)) {
 	echo "you are a human and you are of age\n";
@@ -46,7 +52,17 @@ if (($answer === "yes") && ($anthony['age'] >= 18)) {
 	echo "ERROR: you are neither a human or robot please retry\n";
 }
 
-sleep(5);
+sleep(2);
+
+$count ='1';
+do {
+	echo "$count\n";
+	$count++;
+	sleep(1);
+	
+} while($count <= 5);
+
+sleep(1);
 
 if (($welcome == true) && ($rwelcome === 10)) {
 	echo "welcome to the resturant we have a fine selection foods\n";
@@ -63,25 +79,35 @@ if (($welcome == true) && ($rwelcome === 10)) {
 	($anthony['cash'] = false);
 }
 
-sleep(5);
+sleep(2);
+
+$count ='1';
+do {
+	echo "$count\n";
+	$count++;
+	sleep(1);
+	
+} while($count <= 5);
+
+sleep(1);
 
 $menu = [
 
 	'hmenu' => [
 		
 		'cheap' => [
-			'candy' => '1$',
-			'muffin' => '1.25$',
-			'soda' => '1.07$'
+			'candy' => '11$',
+			'muffin' => '11.25$',
+			'soda' => '11.07$'
 	 ],
 	 	'moderate' => [
-	 		'pizza' => '3$',
-	 		'burger' => '4$',
-	 		'fries' => '2.50$'
+	 		'pizza' => '63$',
+	 		'burger' => '64$',
+	 		'fries' => '62.50$'
 	 ],
 	 	'expensive' => [
-	 		'spegetti' => '27$',
-	 		'shark' => '34$'
+	 		'spegetti' => '127$',
+	 		'shark' => '134$'
 	 ],
 	],
 
