@@ -11,6 +11,8 @@ $anthony = [
 	    'cash' => mt_rand(1, SIDES_OF_DICE)
 ];
 
+echo exec('clear');
+
 //checking if human or robot
 if ($anthony['human']) {
 	echo "you are a human\n";
@@ -21,13 +23,15 @@ if ($anthony['human']) {
 	echo "you are a robot\n"; 
 	 ($answer = "no");
 }
-sleep(1);
+sleep(3);
 
 $count ='1';
 do {
+	echo exec('clear');
 	echo "$count\n";
 	$count++;
 	sleep(1);
+echo exec('clear');
 	
 } while($count <= 5);
 
@@ -51,17 +55,20 @@ if (($answer === "yes") && ($anthony['age'] >= 18)) {
 	echo "ERROR: you are neither a human or robot please retry\n";
 }
 
-sleep(2);
+sleep(3);
 
 $count ='1';
 do {
+	echo exec('clear');
 	echo "$count\n";
 	$count++;
 	sleep(1);
+	echo exec('clear');
 	
 } while($count <= 5);
 
 sleep(1);
+
 //checks for the created variables $welcome and $rwelcome and their values
 if (($welcome == true) && ($rwelcome === 10)) {
 	echo "welcome to the resturant we have a fine selection foods\n";
@@ -83,16 +90,21 @@ if (($welcome == true) && ($rwelcome === 10)) {
 	($anthony['cash'] = false);
 }
 
-sleep(2);
+sleep(3);
 
-$count ='1';
-do {
-	echo "$count\n";
-	$count++;
-	sleep(1);
-	
-} while($count <= 5);
-
+if ($anthony['cash'] == true) {	
+	$count ='1';
+	do {
+		echo exec('clear');
+		echo "$count\n";
+		$count++;
+		sleep(1);
+		echo exec('clear');
+		
+	} while($count <= 5);
+} else {
+	echo "   \n";
+}
 sleep(1);
 //multi-dim array for the menu
 $menu = [
