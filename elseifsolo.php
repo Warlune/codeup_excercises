@@ -22,6 +22,7 @@ if ($anthony['human']) {
 	 ($answer = "no");
 }
 sleep(1);
+
 $count ='1';
 do {
 	echo "$count\n";
@@ -38,16 +39,12 @@ if (($answer === "yes") && ($anthony['age'] >= 18)) {
 	($rwelcome = 10);
 } elseif (($answer === "yes") && ($anthony['age'] <= 18)) {
 	echo "you are a human and you are not of age\n";
-	// ($welcome = false); 
-	// ($rwelcome = 10);
 } elseif (($answer === "no") && ($anthony['age'] >= 18)) {
 	echo "you are a robot and you are of age\n";
 	($rwelcome = true);
 	($welcome = 10);
 } elseif (($answer === "no") && ($anthony['age'] <= 18)) {
 	echo "you are a robot and you are not of age\n";
-	// ($rwelcome = false);
-	// ($welcome = 10);
 } else {
 	echo "ERROR: you are neither a human or robot please retry\n";
 }
@@ -129,6 +126,7 @@ $menu = [
 	 ],
 	]
 ];
+
 if ($anthony['cash'] == true){
 	if (($hum == true) && ($anthony['cash'] >= 1) || ($anthony['cash'] <= 13)) {
 		echo "here is our cheap menu\n";
