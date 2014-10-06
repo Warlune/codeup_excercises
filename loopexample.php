@@ -1,4 +1,4 @@
-// <?php
+<?php
 
 // $a = 6;
 // do {
@@ -20,6 +20,8 @@
 
 // DO WHILE LOOP
 
+echo exec(clear);
+
 $count ='1';
 do {
 	echo "$count\n";
@@ -27,6 +29,8 @@ do {
 	sleep(1);
 	
 } while($count <= 5);
+
+
 
 // sleep(1);
 
