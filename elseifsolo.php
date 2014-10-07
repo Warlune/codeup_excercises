@@ -6,9 +6,9 @@ define('YES_NO' , $bool);
 define('MONEY', 150);
 //random user data
 $anthony = [
-	    'age' => mt_rand(1, SIDES_OF_DICE),
-	    'human' => YES_NO,
-	    'cash' => mt_rand(1, SIDES_OF_DICE)
+    'age' => mt_rand(1, SIDES_OF_DICE),
+    'human' => YES_NO,
+    'cash' => mt_rand(1, SIDES_OF_DICE)
 ];
 
 echo exec('clear');
@@ -17,11 +17,11 @@ echo exec('clear');
 if ($anthony['human']) {
 	echo "you are a human\n";
 	//changes variable $answer to be checked later
-	 $answer = "yes";
+	$answer = "yes";
 
 } else {
 	echo "you are a robot\n"; 
-	 ($answer = "no");
+	$answer = "no";
 }
 sleep(3);
 
@@ -40,8 +40,8 @@ sleep(1);
 if (($answer === "yes") && ($anthony['age'] >= 18)) {
 	echo "you are a human and you are of age\n";
 	//making variable to be checked later
-	($welcome = true);
-	($rwelcome = 10);
+	$welcome = true;
+	$rwelcome = 10;
 } elseif (($answer === "yes") && ($anthony['age'] <= 18)) {
 	echo "you are a human and you are not of age\n";
 } elseif (($answer === "no") && ($anthony['age'] >= 18)) {
@@ -90,7 +90,11 @@ if (($welcome == true) && ($rwelcome === 10)) {
 	($anthony['cash'] = false);
 }
 
-sleep(3);
+// while($i < 3) {
+// 	echo '.';
+// 	sleep(3);
+// 	$i++;
+// }
 
 if ($anthony['cash'] == true) {	
 	$count ='1';
