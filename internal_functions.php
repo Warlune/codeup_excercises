@@ -25,6 +25,8 @@ function set($var1, $var2) {
 	}
 }
 
+
+
 // function check_set_or_empty($value) {
 // 	if(isset($value)) {
 
